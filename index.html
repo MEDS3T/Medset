@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Medset - Acceuil</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/favicon.svg"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/apex-charts/apex-charts.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/cards-advance.css" />
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                  width="36"
+                  height="26"
+                  viewBox="0 0 36 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.4052 16.104C33.5923 17.9101 32.539 19.5677 31.1181 20.9714C29.2542 22.8101 27.1311 24.1693 24.7112 24.9525C24.2793 25.5795 23.5383 25.9841 22.6911 25.9766C21.3809 25.9614 20.3421 24.9124 20.3653 23.6161C20.3897 22.2221 21.5072 21.2643 22.8096 21.3174C23.2692 21.3359 23.6878 21.466 24.0378 21.683C27.6272 20.2782 30.1612 17.8494 31.5356 14.249C32.1437 12.6533 32.3951 11.0185 32.2899 9.31978C32.1093 6.36701 29.3107 3.77764 26.2074 3.65832C23.3578 3.54767 20.9434 5.32237 20.0419 7.48108C19.8093 8.03648 19.7285 8.65372 19.5878 9.24493C19.4959 9.63219 19.1426 9.90664 18.7362 9.90664H16.9509C16.5444 9.90664 16.1922 9.63219 16.0992 9.24493C15.9585 8.65481 15.8777 8.03648 15.6451 7.48108C14.7436 5.32237 12.3281 3.54767 9.47963 3.65832C6.37639 3.77764 3.57772 6.36701 3.39498 9.31978C3.29198 11.0185 3.54339 12.6533 4.15141 14.249C5.52583 17.8516 8.06312 20.2804 11.6526 21.6852H11.6548C12.0546 21.4313 12.5352 21.2968 13.0458 21.3174C14.3826 21.3728 15.3694 22.3621 15.3494 23.6985C15.3284 24.9818 14.2585 25.9896 12.9273 25.9766C12.1244 25.9679 11.4222 25.5687 11.0047 24.9634C8.57147 24.1802 6.43952 22.8177 4.56783 20.9714C3.14468 19.5688 2.09366 17.9101 1.28075 16.104C0.143338 13.5743 -0.277514 10.8873 0.184316 8.20462C0.899766 4.03039 4.23336 1.00386 8.56261 0.453875C12.296 -0.0223425 15.8478 1.69486 17.8424 4.60424C19.8359 1.69486 23.3877 -0.0223425 27.12 0.453875C31.4504 1.00386 34.7851 4.03039 35.5005 8.20462C35.9623 10.8873 35.5437 13.5743 34.4052 16.104Z"
+                    fill="#20539E"
+                  />
+                </svg>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bold">Medset</span>
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto"
+            >
+              <i
+                class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"
+              ></i>
+              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon"
+                  ><svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 15 16"
+                    style="enable-background: new 0 0 15 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="st0"
+                      d="M14.5,6L9.7,1C9.1,0.4,8.3,0,7.5,0S5.9,0.4,5.3,1L0.5,6C0.4,6.2,0.2,6.4,0.1,6.7C0,6.9,0,7.2,0,7.5V14
+                 c0,0.5,0.2,1,0.5,1.4C0.9,15.8,1.4,16,1.9,16h11.2c0.5,0,1-0.2,1.3-0.6C14.8,15,15,14.5,15,14V7.5c0-0.3,0-0.5-0.1-0.8
+                 S14.6,6.2,14.5,6z M9.4,14.7H5.6V12c0-0.5,0.2-1,0.5-1.4C6.5,10.3,7,10,7.5,10s1,0.2,1.3,0.6C9.2,11,9.4,11.5,9.4,12V14.7z M13.8,14
+                 c0,0.2-0.1,0.3-0.2,0.5s-0.3,0.2-0.4,0.2h-2.5V12c0-0.9-0.3-1.7-0.9-2.4c-0.6-0.6-1.4-1-2.2-1s-1.6,0.4-2.2,1
+                 c-0.6,0.6-0.9,1.5-0.9,2.4v2.6H1.9c-0.2,0-0.3-0.1-0.4-0.2c-0.1-0.1-0.2-0.3-0.2-0.5V7.5c0-0.2,0.1-0.3,0.2-0.5l4.7-5.1
+                 C6.5,1.5,7,1.3,7.5,1.3s1,0.2,1.3,0.6L13.6,7c0.1,0.1,0.2,0.3,0.2,0.5V14z"
+                    />
+                  </svg>
+                </i>
+                <div data-i18n="Accueil">Accueil</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="sessions.html" class="menu-link">
+                <i class="menu-icon"
+                  ><svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 19 16"
+                    style="enable-background: new 0 0 19 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="st0"
+                      d="M14.5,0H3.8c-1,0-2,0.4-2.7,1.1C0.4,1.7,0,2.7,0,3.6v5.8c0,1,0.4,1.9,1.1,2.6c0.7,0.7,1.7,1.1,2.7,1.1h4.6v1.5
+                 h-3c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.1,0.4,0.2,0.5C4.9,15.9,5.1,16,5.3,16H13c0.2,0,0.4-0.1,0.5-0.2
+                 c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.3-0.2-0.5-0.2h-3v-1.5h4.6c1,0,2-0.4,2.7-1.1c0.7-0.7,1.1-1.6,1.1-2.6
+                 V3.6c0-1-0.4-1.9-1.1-2.6C16.5,0.4,15.5,0,14.5,0z M16.8,9.5c0,0.6-0.2,1.1-0.7,1.5c-0.4,0.4-1,0.6-1.6,0.6H3.8
+                 c-0.6,0-1.2-0.2-1.6-0.6c-0.4-0.4-0.7-1-0.7-1.5V3.6c0-0.6,0.2-1.1,0.7-1.5s1-0.6,1.6-0.6h10.7c0.6,0,1.2,0.2,1.6,0.6
+                 c0.4,0.4,0.7,1,0.7,1.5V9.5z M15.2,6.5c0,0.2-0.1,0.4-0.2,0.5c-0.1,0.1-0.3,0.2-0.5,0.2h-2.3l-1.3,1.9c-0.1,0.1-0.2,0.2-0.3,0.2
+                 c-0.1,0.1-0.2,0.1-0.4,0.1c0,0,0,0,0,0c-0.1,0-0.3,0-0.4-0.1S9.7,9.2,9.6,9.1L7.9,5.8L7.1,6.9C7,7,6.9,7.1,6.8,7.2S6.6,7.3,6.5,7.3
+                 H3.8c-0.2,0-0.4-0.1-0.5-0.2C3.1,6.9,3,6.7,3,6.5C3,6.4,3.1,6.2,3.3,6c0.1-0.1,0.3-0.2,0.5-0.2h2.3L7.4,4c0.1-0.1,0.2-0.2,0.3-0.3
+                 C7.8,3.7,7.9,3.6,8,3.6c0.1,0,0.3,0,0.4,0.1C8.5,3.8,8.6,3.9,8.7,4l1.7,3.2l0.8-1.1C11.2,6,11.3,6,11.5,5.9c0.1-0.1,0.2-0.1,0.4-0.1
+                 h2.7c0.2,0,0.4,0.1,0.5,0.2C15.2,6.2,15.2,6.4,15.2,6.5z"
+                    />
+                  </svg>
+                </i>
+                <div data-i18n="Sessions">Sessions</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="favoris.html" class="menu-link">
+                <i class="menu-icon"
+                  ><svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 18 16"
+                    style="enable-background: new 0 0 18 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="st0"
+                      d="M12.7,0c-0.8,0-1.6,0.3-2.3,0.7C9.7,1.1,9.1,1.8,8.7,2.5c-0.4-0.7-1-1.4-1.7-1.8C6.3,0.3,5.5,0,4.7,0
+                 C3.4,0.1,2.2,0.7,1.3,1.7C0.4,2.7,0,4,0,5.3c0,3.4,3.5,7.2,6.4,9.8C7.1,15.7,7.9,16,8.7,16c0.9,0,1.7-0.3,2.3-0.9
+                 c2.9-2.6,6.4-6.3,6.4-9.8c0-1.4-0.4-2.7-1.3-3.7C15.3,0.7,14,0.1,12.7,0z M10.1,14c-0.4,0.3-0.9,0.5-1.4,0.5c-0.5,0-1-0.2-1.4-0.5
+                 c-3.7-3.3-5.9-6.4-5.9-8.6c0-1,0.3-1.9,0.9-2.6C2.9,2,3.8,1.6,4.7,1.5C5.6,1.6,6.5,2,7.1,2.7C7.7,3.4,8,4.4,8,5.3
+                 c0,0.2,0.1,0.4,0.2,0.5C8.3,6,8.5,6.1,8.7,6.1c0.2,0,0.4-0.1,0.5-0.2c0.1-0.1,0.2-0.3,0.2-0.5c0-1,0.3-1.9,0.9-2.6
+                 c0.6-0.7,1.5-1.2,2.4-1.2c0.9,0.1,1.8,0.5,2.4,1.2C15.7,3.4,16,4.4,16,5.3C16,7.5,13.9,10.7,10.1,14L10.1,14z"
+                    />
+                  </svg>
+                </i>
+                <div data-i18n="Favoris">Favoris</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Greeting -->
+              <div class="navbar-nav align-items-center">
+                <h4>Salut , <b>Lorem</b></h4>
+              </div>
+              <!-- /Greeting -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Notification -->
+                <li
+                  class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <i class="ti ti-bell ti-md"></i>
+                    <span
+                      class="badge bg-primary rounded-pill badge-notifications"
+                      >3</span
+                    >
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div
+                        class="dropdown-header d-flex align-items-center py-3"
+                      >
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li
+                      class="dropdown-notifications-list scrollable-container"
+                    >
+                      <ul class="list-group list-group-flush">
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Lorem, ipsum dolor.</h6>
+                              <p class="mb-0">Lorem ipsum dolor sit.</p>
+                              <small class="text-muted">Il y a 4 jours</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Lorem, ipsum dolor.</h6>
+                              <p class="mb-0">Lorem ipsum dolor sit.</p>
+                              <small class="text-muted">Il y a 4 jours</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Lorem, ipsum dolor.</h6>
+                              <p class="mb-0">Lorem ipsum dolor sit.</p>
+                              <small class="text-muted">Il y a 4 jours</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center"
+                      >
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link" href="profile.html">
+                    <div class="avatar avatar-online">
+                      <div
+                        class="avatar avatar-md d-block flex-shrink-0 me-sm-3 me-2"
+                      >
+                        <span
+                          class="avatar-initial rounded-circle bg-label-primary"
+                          >LI</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+          </nav>
+
+          <!-- / Navbar -->
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row mb-4">
+                <!--  Standard -->
+                <div class="col-12 col-sm-6 col-lg-5 mb-4">
+                  <div class="card acceuil">
+                    <div class="card-body">
+                      <i class="acceuil-icon"
+                        ><svg
+                          width="45"
+                          height="45"
+                          viewBox="0 0 45 45"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M36.7893 11.9442C35.5766 5.00968 29.5648 0 22.4984 0C15.432 0 9.4202 5.00968 8.20748 11.9442C7.3901 16.7431 8.97204 21.5947 12.4526 24.9433C14.6049 27.0047 15.9066 29.9275 15.9066 32.959V34.2773L18.5433 37.002H22.4984H26.4535L29.0902 34.2773V32.959C29.0902 29.9309 30.3896 27.0069 32.5443 24.9433C36.0248 21.5947 37.6067 16.7431 36.7893 11.9442Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M1.38672 5.80078L3.25069 3.93681L7.13181 7.81793L5.26784 9.6819L1.38672 5.80078Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M0 13.1836H5.36133V15.8203H0V13.1836Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M1.41797 23.1699L5.29524 19.2927L7.15921 21.1566L3.28194 25.0339L1.41797 23.1699Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M22.498 34.2773H15.9062V38.4082C15.9062 42.0469 18.8594 45 22.498 45C26.1367 45 29.0898 42.0469 29.0898 38.4082V34.2773H22.498Z"
+                            fill="#EDF5FF"
+                          />
+                          <path
+                            d="M37.8594 7.82227L41.7404 3.94121L43.6046 5.80537L39.7235 9.68643L37.8594 7.82227Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M39.6406 13.1836H45.002V15.8203H39.6406V13.1836Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M37.832 21.1602L39.6962 19.296L43.5745 23.1743L41.7104 25.0385L37.832 21.1602Z"
+                            fill="#FED843"
+                          />
+                        </svg>
+                      </i>
+                      <h5>Standard</h5>
+                      <button
+                        type="button"
+                        class="btn btn-icon btn-primary waves-effect waves-light"
+                        onclick="window.location.href='mode-standard-certifs.html';"
+                      >
+                        <span class="ti ti-arrow-narrow-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--/  Standard -->
+
+                <!--  Aléatoire -->
+                <div class="col-12 col-sm-6 col-lg-5 mb-4">
+                  <div class="card acceuil">
+                    <div class="card-body">
+                      <i class="acceuil-icon"
+                        ><svg
+                          width="45"
+                          height="45"
+                          viewBox="0 0 45 45"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_207_9299)">
+                            <path
+                              d="M42 30.8438L30.0314 21.8613L28.875 21V27.103C24.9622 26.6848 23.1655 24.3469 21.3198 21.8613C21.2954 21.812 21.2461 21.7876 21.2214 21.7383L17.53 16.7917C12.6822 10.2949 9.59766 7.46484 1.23047 7.46484H0V14.8477H1.23047C6.9153 14.8477 9.55664 18.342 12.0176 21.7136C12.0423 21.763 12.0913 21.812 12.116 21.8613H12.1406C12.9036 22.9194 13.6665 23.9531 14.4785 24.7651C18.1699 30.8438 22.9934 34.0923 28.875 34.4858V40.6875L42 30.8438Z"
+                              fill="#FFB125"
+                            />
+                            <path
+                              d="M28.875 40.6875V34.4858C22.9934 34.0923 18.1699 30.8438 14.4785 24.7651C13.6665 23.9531 12.9036 22.9194 12.1406 21.8613H21.3198C23.1655 24.3469 24.9622 26.6848 28.875 27.103V21L30.0314 21.8613L42 30.8438L28.875 40.6875Z"
+                              fill="#FF901D"
+                            />
+                            <path
+                              d="M21.1971 21.8613C17.8255 27.3001 12.5261 34.5352 1.23047 34.5352H0V27.1523H1.23047C6.42311 27.1523 9.67969 24.8638 12.116 21.8613H21.1971Z"
+                              fill="black"
+                            />
+                            <path
+                              d="M42 11.1562L28.875 1.3125V7.51387C23.7561 7.88333 19.4741 10.59 16.4226 15.4135L15.5366 16.8658C14.4538 18.5637 13.3954 20.3111 12.116 21.8613C9.67969 24.8638 6.42311 27.1523 1.23047 27.1523H0V34.5352H1.23047C12.5261 34.5352 17.8255 27.3001 21.1971 21.8613C21.4675 21.4428 21.7136 21.0247 21.9597 20.6309L22.772 19.302C24.4206 16.718 26.4141 15.2905 28.875 14.9214V21L42 11.1562Z"
+                              fill="#FED843"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_207_9299">
+                              <rect width="45" height="45" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </i>
+                      <h5>Aléatoire</h5>
+                      <button
+                        type="button"
+                        class="btn btn-icon btn-primary waves-effect waves-light"
+                        onclick="window.location.href='mode-aleatoire-certifs.html';"
+                      >
+                        <span class="ti ti-arrow-narrow-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--/  Aléatoire -->
+                <!--  CMM -->
+                <div class="col-12 col-sm-6 col-lg-5 mb-4">
+                  <div class="card acceuil">
+                    <div class="card-body">
+                      <i class="acceuil-icon"
+                        ><svg
+                          width="45"
+                          height="45"
+                          viewBox="0 0 52 52"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M33.7187 1.52343V7.96238C33.7187 8.81561 33.0485 9.48582 32.1953 9.48582H26.1016C25.2483 9.48582 24.5781 8.81561 24.5781 7.96238V1.52343C24.5781 0.67021 25.2483 0 26.1016 0H32.1953C33.0485 0 33.7187 0.67021 33.7187 1.52343Z"
+                            fill="#57555C"
+                          />
+                          <path
+                            d="M36.7656 1.52343C36.7656 2.37646 36.0954 3.04687 35.2422 3.04687H23.0547C22.2015 3.04687 21.5312 2.37646 21.5312 1.52343C21.5312 0.67021 22.2015 0 23.0547 0H35.2422C36.0954 0 36.7656 0.67021 36.7656 1.52343Z"
+                            fill="#FD4E26"
+                          />
+                          <path
+                            d="M19.1909 13.2251C19.7533 10.5427 19.5941 7.75323 18.7282 5.1572L18.4069 4.09009C18.2343 3.57537 17.8029 3.19004 17.2717 3.07995C16.7436 2.96691 16.1916 3.1484 15.8286 3.5516L7.47054 12.9396C6.71339 13.7815 6.29678 14.8676 6.29678 15.9983V29.5693C6.29678 30.7907 5.82066 31.9378 4.95779 32.8022L0.44629 37.1106C-0.148763 37.7057 -0.148763 38.6698 0.44629 39.2649L12.8369 51.5539C13.1345 51.8515 13.5243 52.0003 13.914 52.0003C14.3036 52.0003 14.6935 51.8515 14.991 51.5539L19.2995 47.1439C20.1639 46.281 21.3109 45.8049 22.5323 45.8049H35.242L19.1909 13.2251Z"
+                            fill="#FEDBAB"
+                          />
+                          <path
+                            d="M45.9062 22.9531C45.9062 27.5842 44.0171 31.7889 41.0007 34.8054C37.9843 37.8218 33.7796 39.7109 29.1484 39.7109C19.886 39.7109 12.3906 32.2155 12.3906 22.9531C12.3906 18.3218 14.2797 14.1171 17.2961 11.1008C20.3125 8.08447 24.5171 6.19531 29.1484 6.19531C33.7798 6.19531 37.9844 8.08437 41.0007 11.1008C44.017 14.1172 45.9062 18.3218 45.9062 22.9531Z"
+                            fill="#17ACE8"
+                          />
+                          <path
+                            d="M29.1484 36.664C21.5878 36.664 15.4375 30.5137 15.4375 22.9531C15.4375 15.3925 21.5878 9.24219 29.1484 9.24219C36.709 9.24219 42.8593 15.3925 42.8593 22.9531C42.8593 30.5137 36.709 36.664 29.1484 36.664Z"
+                            fill="#CAE8F9"
+                          />
+                          <path
+                            d="M30.6719 16.8594V22.9531C30.6719 23.8061 30.0016 24.4765 29.1484 24.4765H23.0547C22.2015 24.4765 21.5312 23.8061 21.5312 22.9531C21.5312 22.0999 22.2015 21.4297 23.0547 21.4297H27.625V16.8594C27.625 16.0061 28.2952 15.3359 29.1484 15.3359C30.0016 15.3359 30.6719 16.0061 30.6719 16.8594Z"
+                            fill="#57555C"
+                          />
+                          <path
+                            d="M39.4316 45.8047H34.0996C32.2065 45.8047 30.6719 44.2701 30.6719 42.3769C30.6719 40.4838 32.2065 38.9492 34.0996 38.9492H39.4316C41.3247 38.9492 42.8594 40.4838 42.8594 42.3769C42.8594 44.2701 41.3247 45.8047 39.4316 45.8047Z"
+                            fill="#FEDBAB"
+                          />
+                          <path
+                            d="M45.5254 32.0937H34.0996C32.2065 32.0937 30.6719 30.5591 30.6719 28.666C30.6719 26.7729 32.2065 25.2383 34.0996 25.2383H45.5254C47.4185 25.2383 48.9531 26.7729 48.9531 28.666C48.9531 30.5591 47.4185 32.0937 45.5254 32.0937Z"
+                            fill="#FEDBAB"
+                          />
+                          <path
+                            d="M48.5722 25.2383H37.1465C35.2534 25.2383 33.7188 23.7037 33.7188 21.8105C33.7188 19.9174 35.2534 18.3828 37.1465 18.3828H48.5722C50.4654 18.3828 52 19.9174 52 21.8105C52 23.7037 50.4654 25.2383 48.5722 25.2383Z"
+                            fill="#FEDBAB"
+                          />
+                          <path
+                            d="M42.4785 38.9492H34.0996C32.2065 38.9492 30.6719 37.4146 30.6719 35.5215C30.6719 33.6284 32.2065 32.0938 34.0996 32.0938H42.4785C44.3716 32.0938 45.9062 33.6284 45.9062 35.5215C45.9062 37.4146 44.3716 38.9492 42.4785 38.9492Z"
+                            fill="#FEDBAB"
+                          />
+                          <defs>
+                            <clipPath id="clip0_207_9311">
+                              <rect width="45" height="45" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </i>
+                      <h5>Contre la montre</h5>
+                      <button
+                        type="button"
+                        class="btn btn-icon btn-primary waves-effect waves-light"
+                        onclick="window.location.href='mode-clm-certifs.html';"
+                      >
+                        <span class="ti ti-arrow-narrow-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--/  CLM -->
+
+                <!--  Examen Blanc -->
+                <div class="col-12 col-sm-6 col-lg-5 mb-4">
+                  <div class="card acceuil">
+                    <div class="card-body">
+                      <i class="acceuil-icon"
+                        ><svg
+                          width="45"
+                          height="45"
+                          viewBox="0 0 50 50"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z"
+                            fill="#FED843"
+                          />
+                          <path
+                            d="M30.5659 7.51953L37.2803 14.2339V42.482H12.7188V7.51953H30.5659Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M30.5664 14.2339V7.51953L37.2809 14.2339H30.5664Z"
+                            fill="#BEC3D2"
+                          />
+                          <path
+                            d="M16.0547 29.6895H33.9462V32.6191H16.0547V29.6895Z"
+                            fill="#CDD2E1"
+                          />
+                          <path
+                            d="M16.0547 35.1621H33.9462V38.0918H16.0547V35.1621Z"
+                            fill="#CDD2E1"
+                          />
+                        </svg>
+                      </i>
+                      <h5>Examen Blanc</h5>
+                      <button
+                        type="button"
+                        class="btn btn-icon btn-primary waves-effect waves-light"
+                        onclick="window.location.href='form-eb.html';"
+                      >
+                        <span class="ti ti-arrow-narrow-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--/  Examen Blanc -->
+                <!--  Défi du jour ! -->
+                <div class="col-12 col-sm-6 col-lg-5 mb-4">
+                  <div class="card acceuil dj">
+                    <div class="card-body">
+                      <i class="dj-icon"
+                        ><svg
+                          width="125"
+                          height="125"
+                          viewBox="0 0 105 105"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g clip-path="url(#clip0_321_1245)">
+                            <path
+                              d="M30.5957 53.4828C30.4354 53.4828 30.2757 53.4735 30.1173 53.4546C28.682 53.2833 27.5399 52.3982 26.9013 50.9629C26.6281 50.3485 26.9047 49.629 27.5191 49.3559C28.1331 49.083 28.8528 49.3593 29.1262 49.9735C29.41 50.6117 29.8405 50.9696 30.406 51.0369C31.0702 51.1157 31.8575 50.7797 32.276 50.2361C32.6599 49.7377 32.7986 49.038 32.6382 48.4102C32.5357 48.0093 32.2648 47.4659 31.5566 47.1547C29.447 46.2272 27.0442 47.1159 24.2618 48.1443C19.2224 50.0076 12.9504 52.3265 5.97747 44.0356L3.08969 40.602C2.508 39.9106 2.23124 39.0339 2.31004 38.1337C2.38884 37.2336 2.81406 36.4186 3.50689 35.8388C5.38634 34.2661 7.91938 33.7142 10.2827 34.363L11.7004 34.7521C12.4544 34.9589 13.2619 34.7823 13.8604 34.2787L17.7069 31.0434C18.2215 30.611 18.9894 30.677 19.4222 31.1915C19.8549 31.7061 19.7886 32.4739 19.2742 32.9068L15.4275 36.1422C14.2163 37.1607 12.582 37.5184 11.0557 37.0999L9.63818 36.7107C8.04478 36.2733 6.33687 36.6454 5.06939 37.7059C4.87608 37.8677 4.75756 38.0949 4.73562 38.3461C4.71352 38.5972 4.79071 38.8418 4.95295 39.0347L7.84074 42.4683C13.7116 49.4486 18.426 47.7056 23.4173 45.8605C26.4204 44.7501 29.5257 43.6019 32.5363 44.9253C33.7889 45.4759 34.6629 46.4993 34.9969 47.807C35.3437 49.1639 35.0477 50.6271 34.205 51.7216C33.3667 52.8105 31.9626 53.4828 30.5957 53.4828Z"
+                              fill="#FF901D"
+                            />
+                            <path
+                              d="M53.4107 34.2592C52.7712 34.2593 52.1291 34.1272 51.5331 33.8613C50.3004 33.3113 49.4389 32.2775 49.1074 30.9502C48.3103 27.7598 49.9654 24.8922 51.566 22.1193C54.2262 17.5106 56.7387 13.1572 50.8477 6.1939L47.9498 2.76862C47.7869 2.57628 47.559 2.45904 47.3077 2.43838C47.0567 2.41692 46.8124 2.4962 46.6205 2.65956C45.3616 3.72989 44.7071 5.35083 44.8696 6.99533L45.0143 8.4582C45.1698 10.0332 44.5415 11.5838 43.3333 12.6059L39.496 15.8523C38.9827 16.287 38.2146 16.2226 37.7803 15.7091C37.3459 15.1958 37.41 14.4277 37.9233 13.9935L41.7605 10.7472C42.3576 10.2422 42.668 9.476 42.5911 8.69763L42.4465 7.23476C42.2054 4.79589 43.1761 2.39226 45.0431 0.804621C45.7314 0.219407 46.6067 -0.0626289 47.5069 0.0116838C48.4075 0.0856763 49.2248 0.506248 49.8084 1.19604L52.7063 4.62148C59.7032 12.8918 56.3604 18.6831 53.6746 23.3366C52.1917 25.9057 50.9111 28.1247 51.4696 30.3603C51.6569 31.1108 52.147 31.4694 52.525 31.6379C53.1169 31.902 53.83 31.8831 54.386 31.5887C54.9922 31.2679 55.4567 30.5494 55.4905 29.8805C55.5191 29.3119 55.239 28.8271 54.6578 28.4397C54.0984 28.0667 53.947 27.3109 54.3199 26.7515C54.6927 26.1921 55.4487 26.0409 56.0081 26.4135C57.3155 27.2848 57.9952 28.5598 57.9223 30.0035C57.8456 31.5203 56.8824 33.0224 55.5252 33.7407C54.8732 34.0855 54.1435 34.2592 53.4107 34.2592Z"
+                              fill="#FF901D"
+                            />
+                            <path
+                              d="M55.3028 73.7751L47.6446 74.3254L40.4422 81.7202C40.2676 81.8994 40.0278 82.0006 39.7775 82.0006H14.1053C13.2193 82.0006 12.8375 80.8774 13.5398 80.3374L37.0483 62.2616L44.6069 49.6628C45.8739 47.551 48.8033 47.2251 50.5035 49.0067L64.6865 59.8722C66.8302 61.5144 66.963 64.6974 64.9636 66.5126L59.0023 71.9243C57.9638 72.8798 56.679 73.5224 55.3028 73.7751Z"
+                              fill="#FED9A8"
+                            />
+                            <path
+                              d="M64.6885 59.8714L61.2209 57.2148C61.5938 58.7 61.175 60.3534 59.9339 61.4801L53.9725 66.8918C52.9341 67.8472 51.6493 68.4897 50.2729 68.7425L42.6147 69.2928L30.2383 81.9996H39.7793C40.0296 81.9996 40.2692 81.8985 40.444 81.7192L47.6465 74.3244L55.3047 73.7741C56.6811 73.5214 57.9657 72.8788 59.0044 71.9235L64.9657 66.5118C66.9651 64.6966 66.8323 61.5136 64.6885 59.8714Z"
+                              fill="#F4C28C"
+                            />
+                            <path
+                              d="M53.8914 53.689L55.3225 55.2284C54.5168 55.3144 53.6912 55.0409 53.1069 54.4124L51.8047 53.0117C52.5533 52.874 53.3446 53.1009 53.8914 53.689Z"
+                              fill="#E8D06B"
+                            />
+                            <path
+                              d="M72.3302 66.8621L63.2374 74.5094L39.2656 41.7229L43.9846 37.7539L72.3302 66.8621Z"
+                              fill="#F7BC14"
+                            />
+                            <path
+                              d="M10.4102 28.3083L18.2442 37.6229C23.7996 44.2282 32.5517 47.4739 41.8217 46.3665L47.3183 45.7098L48.9074 40.407C51.5873 31.4639 49.8898 22.2851 44.3343 15.6798L36.5002 6.36523L10.4102 28.3083Z"
+                              fill="#FED130"
+                            />
+                            <path
+                              d="M44.3368 15.6798L36.5028 6.36523L30.9062 11.0722L39.1662 20.8505C44.7215 27.4558 46.4192 36.6346 43.7393 45.5777L43.5652 46.1584L47.3209 45.7099L48.9099 40.4071C51.5897 31.4641 49.8922 22.2853 44.3368 15.6798Z"
+                              fill="#F7BC14"
+                            />
+                            <path
+                              d="M38.9677 7.35021L10.9603 30.9058C10.5523 31.2488 9.94343 31.1963 9.60037 30.7884L7.82808 28.681C7.48502 28.2731 7.53755 27.6642 7.94547 27.3211L35.9529 3.76558C36.3608 3.42252 36.9697 3.47505 37.3128 3.88297L39.0851 5.99032C39.4283 6.39824 39.3758 7.00699 38.9677 7.35021Z"
+                              fill="#FFB125"
+                            />
+                            <path
+                              d="M39.084 5.99032L37.3117 3.88297C36.9686 3.47505 36.3597 3.42252 35.9518 3.76558L31.0039 7.92693L34.0187 11.5116L38.9666 7.35021C39.3747 7.00699 39.4272 6.39824 39.084 5.99032Z"
+                              fill="#FF901D"
+                            />
+                            <path
+                              d="M30.2828 25.1592L35.2954 27.3561C35.3596 27.3843 35.4338 27.379 35.4934 27.342L40.1448 24.4582C40.295 24.3652 40.4867 24.4846 40.4693 24.6605L39.9289 30.1066C39.922 30.1765 39.9499 30.2453 40.0034 30.2905L44.1833 33.8231C44.3183 33.9371 44.2639 34.1565 44.0912 34.1943L38.7447 35.3633C38.6762 35.3784 38.6193 35.4261 38.5929 35.4911L36.5248 40.5582C36.458 40.7218 36.2325 40.7378 36.1433 40.5852L33.3793 35.8615C33.3439 35.801 33.2808 35.7618 33.2108 35.7566L27.7527 35.3556C27.5763 35.3426 27.4914 35.1332 27.609 35.0012L31.2473 30.9129C31.2939 30.8605 31.3118 30.7884 31.295 30.7202L29.9897 25.4052C29.9479 25.2339 30.1209 25.0883 30.2828 25.1592Z"
+                              fill="white"
+                            />
+                            <path
+                              d="M79.1377 66.2048L62.0581 80.5696C61.3168 81.1933 60.1942 81.012 59.6868 80.1867L56.8639 75.5955C56.4525 74.9265 56.5929 74.057 57.194 73.5515L73.0571 60.21C73.6581 59.7045 74.5387 59.7151 75.1274 60.2351L79.1669 63.8033C79.893 64.4444 79.8793 65.5812 79.1377 66.2048Z"
+                              fill="#FFB125"
+                            />
+                            <path
+                              d="M79.1679 63.8032L75.1284 60.2351C74.5398 59.7152 73.6591 59.7045 73.0581 60.2099L68.4297 64.1027L74.8722 69.7934L79.1388 66.2051C79.8803 65.5814 79.8941 64.4446 79.1679 63.8032Z"
+                              fill="#FF901D"
+                            />
+                            <path
+                              d="M61.8613 66.2593C63.0181 67.5055 64.9663 67.5776 66.212 66.4203L70.065 62.8408C71.3101 61.6841 71.3821 59.7372 70.2258 58.4917C69.069 57.2455 67.1208 57.1735 65.8751 58.3308L62.0221 61.9103C60.777 63.0669 60.705 65.0138 61.8613 66.2593Z"
+                              fill="#F4C28C"
+                            />
+                            <path
+                              d="M62.0221 61.9103L65.8752 58.3308C67.1209 57.1735 69.069 57.2455 70.2258 58.4917C70.8966 59.2143 71.1532 60.1729 71.0079 61.0763C69.8359 60.0776 68.0757 60.0925 66.9199 61.1662L63.0668 64.7457C62.5441 65.2313 62.229 65.8564 62.1238 66.5101C62.0327 66.4325 61.9446 66.3493 61.8612 66.2595C60.705 65.0139 60.7771 63.0671 62.0221 61.9103Z"
+                              fill="#FED9A8"
+                            />
+                            <path
+                              d="M58.7721 60.7058C59.9464 61.9707 61.924 62.0439 63.1885 60.8691L66.9735 57.3529C68.2373 56.1788 68.3105 54.2024 67.1367 52.9382C65.9624 51.6732 63.9848 51.6 62.7203 52.7748L58.9353 56.291C57.6715 57.4652 57.5984 59.4413 58.7721 60.7058Z"
+                              fill="#F4C28C"
+                            />
+                            <path
+                              d="M58.9353 56.291L62.7203 52.7748C63.9849 51.6 65.9624 51.6732 67.1367 52.9382C67.8093 53.6629 68.0717 54.6212 67.9358 55.5287C66.7462 54.4933 64.9425 54.5013 63.761 55.5988L59.976 59.1151C59.4366 59.6162 59.1149 60.2637 59.0137 60.9394C58.9301 60.8667 58.8492 60.789 58.7721 60.7059C57.5984 59.4415 57.6715 57.4653 58.9353 56.291Z"
+                              fill="#FED9A8"
+                            />
+                            <path
+                              d="M54.4986 56.1667C55.6729 57.4316 57.6505 57.5048 58.915 56.3301L62.6999 52.8138C63.9637 51.6397 64.0369 49.6634 62.8631 48.3991C61.6889 47.1342 59.7113 47.061 58.4468 48.2357L54.6618 51.752C53.398 52.9263 53.325 54.9024 54.4986 56.1667Z"
+                              fill="#F4C28C"
+                            />
+                            <path
+                              d="M54.662 51.752L58.447 48.2357C59.7116 47.061 61.689 47.1342 62.8633 48.3991C62.9443 48.4864 63.0188 48.5774 63.088 48.6709C62.4013 48.7191 61.7259 48.9928 61.1821 49.4979L57.3971 53.0142C56.2205 54.1072 56.0765 55.8954 57.0092 57.1571C56.0986 57.221 55.1682 56.8879 54.4988 56.1667C53.325 54.9024 53.398 52.9262 54.662 51.752Z"
+                              fill="#FED9A8"
+                            />
+                            <path
+                              d="M50.3854 51.4558C51.5596 52.7207 53.5373 52.7939 54.8017 51.6191L58.5867 48.1029C59.8505 46.9288 59.9237 44.9524 58.7499 43.6882C57.5756 42.4232 55.598 42.35 54.3336 43.5248L50.5486 47.0411C49.2848 48.2152 49.2117 50.1915 50.3854 51.4558Z"
+                              fill="#F4C28C"
+                            />
+                            <path
+                              d="M50.5486 47.0411L54.3336 43.5248C55.5982 42.35 57.5756 42.4232 58.7499 43.6882C59.4219 44.4121 59.6844 45.3693 59.5496 46.2758C58.3599 45.2385 56.5548 45.2459 55.3725 46.3442L51.5875 49.8605C51.0473 50.3624 50.7254 51.0109 50.6246 51.6876C50.5418 51.6153 50.4618 51.5383 50.3854 51.456C49.2117 50.1915 49.2848 48.2152 50.5486 47.0411Z"
+                              fill="#FED9A8"
+                            />
+                            <path
+                              d="M57.6192 53.8476L56.9173 54.4997C55.813 55.5257 54.1088 55.4864 53.11 54.4123L51.3428 52.5114C50.4778 51.5809 49.0001 51.5519 48.0494 52.4467C48.5814 60.6784 37.0508 62.2616 37.0508 62.2616L41.9517 50.2066C42.254 49.3073 42.7769 48.4926 43.4719 47.8383L46.9526 44.5625C48.6448 42.9699 51.2749 43.0205 52.816 44.6757L57.8093 50.039C58.8105 51.1139 58.7253 52.82 57.6192 53.8476Z"
+                              fill="#FED9A8"
+                            />
+                          </g>
+                          <defs>
+                            <clipPath id="clip0_321_1245">
+                              <rect width="82" height="82" fill="white" />
+                            </clipPath>
+                          </defs>
+                        </svg>
+                      </i>
+                      <h5>Défi du jour !</h5>
+
+                      <button
+                        type="button"
+                        class="btn btn-icon btn-label-secondary waves-effect"
+                        onclick="window.location.href='vue-ensemble-dj.html';"
+                      >
+                        <span class="ti ti-arrow-narrow-right"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--/  Défi du jour ! -->
+              </div>
+
+              <script src="../../assets//js/pages-pricing.js"></script>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column"
+                >
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    2023 , made with ❤️ by
+                    <a
+                      href="https://medset.com"
+                      target="_blank"
+                      class="fw-semibold"
+                      >Medset</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/dashboards-analytics.js"></script>
+  </body>
+</html>

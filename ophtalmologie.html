@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-no-customizer"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Mode Standard - Ophtalmologie</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/favicon/favicon.svg"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/node-waves/node-waves.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/typeahead-js/typeahead.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/apex-charts/apex-charts.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css" />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css"
+    />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/cards-advance.css" />
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside
+          id="layout-menu"
+          class="layout-menu menu-vertical menu bg-menu-theme"
+        >
+          <div class="app-brand demo">
+            <a href="index.html" class="app-brand-link">
+              <span class="app-brand-logo demo">
+                <svg
+                  width="36"
+                  height="26"
+                  viewBox="0 0 36 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M34.4052 16.104C33.5923 17.9101 32.539 19.5677 31.1181 20.9714C29.2542 22.8101 27.1311 24.1693 24.7112 24.9525C24.2793 25.5795 23.5383 25.9841 22.6911 25.9766C21.3809 25.9614 20.3421 24.9124 20.3653 23.6161C20.3897 22.2221 21.5072 21.2643 22.8096 21.3174C23.2692 21.3359 23.6878 21.466 24.0378 21.683C27.6272 20.2782 30.1612 17.8494 31.5356 14.249C32.1437 12.6533 32.3951 11.0185 32.2899 9.31978C32.1093 6.36701 29.3107 3.77764 26.2074 3.65832C23.3578 3.54767 20.9434 5.32237 20.0419 7.48108C19.8093 8.03648 19.7285 8.65372 19.5878 9.24493C19.4959 9.63219 19.1426 9.90664 18.7362 9.90664H16.9509C16.5444 9.90664 16.1922 9.63219 16.0992 9.24493C15.9585 8.65481 15.8777 8.03648 15.6451 7.48108C14.7436 5.32237 12.3281 3.54767 9.47963 3.65832C6.37639 3.77764 3.57772 6.36701 3.39498 9.31978C3.29198 11.0185 3.54339 12.6533 4.15141 14.249C5.52583 17.8516 8.06312 20.2804 11.6526 21.6852H11.6548C12.0546 21.4313 12.5352 21.2968 13.0458 21.3174C14.3826 21.3728 15.3694 22.3621 15.3494 23.6985C15.3284 24.9818 14.2585 25.9896 12.9273 25.9766C12.1244 25.9679 11.4222 25.5687 11.0047 24.9634C8.57147 24.1802 6.43952 22.8177 4.56783 20.9714C3.14468 19.5688 2.09366 17.9101 1.28075 16.104C0.143338 13.5743 -0.277514 10.8873 0.184316 8.20462C0.899766 4.03039 4.23336 1.00386 8.56261 0.453875C12.296 -0.0223425 15.8478 1.69486 17.8424 4.60424C19.8359 1.69486 23.3877 -0.0223425 27.12 0.453875C31.4504 1.00386 34.7851 4.03039 35.5005 8.20462C35.9623 10.8873 35.5437 13.5743 34.4052 16.104Z"
+                    fill="#20539E"
+                  />
+                </svg>
+              </span>
+              <span class="app-brand-text demo menu-text fw-bold">Medset</span>
+            </a>
+
+            <a
+              href="javascript:void(0);"
+              class="layout-menu-toggle menu-link text-large ms-auto"
+            >
+              <i
+                class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"
+              ></i>
+              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <li class="menu-item active">
+              <a href="index.html" class="menu-link">
+                <i class="menu-icon"
+                  ><svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 15 16"
+                    style="enable-background: new 0 0 15 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="st0"
+                      d="M14.5,6L9.7,1C9.1,0.4,8.3,0,7.5,0S5.9,0.4,5.3,1L0.5,6C0.4,6.2,0.2,6.4,0.1,6.7C0,6.9,0,7.2,0,7.5V14
+                 c0,0.5,0.2,1,0.5,1.4C0.9,15.8,1.4,16,1.9,16h11.2c0.5,0,1-0.2,1.3-0.6C14.8,15,15,14.5,15,14V7.5c0-0.3,0-0.5-0.1-0.8
+                 S14.6,6.2,14.5,6z M9.4,14.7H5.6V12c0-0.5,0.2-1,0.5-1.4C6.5,10.3,7,10,7.5,10s1,0.2,1.3,0.6C9.2,11,9.4,11.5,9.4,12V14.7z M13.8,14
+                 c0,0.2-0.1,0.3-0.2,0.5s-0.3,0.2-0.4,0.2h-2.5V12c0-0.9-0.3-1.7-0.9-2.4c-0.6-0.6-1.4-1-2.2-1s-1.6,0.4-2.2,1
+                 c-0.6,0.6-0.9,1.5-0.9,2.4v2.6H1.9c-0.2,0-0.3-0.1-0.4-0.2c-0.1-0.1-0.2-0.3-0.2-0.5V7.5c0-0.2,0.1-0.3,0.2-0.5l4.7-5.1
+                 C6.5,1.5,7,1.3,7.5,1.3s1,0.2,1.3,0.6L13.6,7c0.1,0.1,0.2,0.3,0.2,0.5V14z"
+                    />
+                  </svg>
+                </i>
+                <div data-i18n="Accueil">Accueil</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="sessions.html" class="menu-link">
+                <i class="menu-icon"
+                  ><svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 19 16"
+                    style="enable-background: new 0 0 19 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="st0"
+                      d="M14.5,0H3.8c-1,0-2,0.4-2.7,1.1C0.4,1.7,0,2.7,0,3.6v5.8c0,1,0.4,1.9,1.1,2.6c0.7,0.7,1.7,1.1,2.7,1.1h4.6v1.5
+                 h-3c-0.2,0-0.4,0.1-0.5,0.2c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.1,0.4,0.2,0.5C4.9,15.9,5.1,16,5.3,16H13c0.2,0,0.4-0.1,0.5-0.2
+                 c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.4-0.2-0.5c-0.1-0.1-0.3-0.2-0.5-0.2h-3v-1.5h4.6c1,0,2-0.4,2.7-1.1c0.7-0.7,1.1-1.6,1.1-2.6
+                 V3.6c0-1-0.4-1.9-1.1-2.6C16.5,0.4,15.5,0,14.5,0z M16.8,9.5c0,0.6-0.2,1.1-0.7,1.5c-0.4,0.4-1,0.6-1.6,0.6H3.8
+                 c-0.6,0-1.2-0.2-1.6-0.6c-0.4-0.4-0.7-1-0.7-1.5V3.6c0-0.6,0.2-1.1,0.7-1.5s1-0.6,1.6-0.6h10.7c0.6,0,1.2,0.2,1.6,0.6
+                 c0.4,0.4,0.7,1,0.7,1.5V9.5z M15.2,6.5c0,0.2-0.1,0.4-0.2,0.5c-0.1,0.1-0.3,0.2-0.5,0.2h-2.3l-1.3,1.9c-0.1,0.1-0.2,0.2-0.3,0.2
+                 c-0.1,0.1-0.2,0.1-0.4,0.1c0,0,0,0,0,0c-0.1,0-0.3,0-0.4-0.1S9.7,9.2,9.6,9.1L7.9,5.8L7.1,6.9C7,7,6.9,7.1,6.8,7.2S6.6,7.3,6.5,7.3
+                 H3.8c-0.2,0-0.4-0.1-0.5-0.2C3.1,6.9,3,6.7,3,6.5C3,6.4,3.1,6.2,3.3,6c0.1-0.1,0.3-0.2,0.5-0.2h2.3L7.4,4c0.1-0.1,0.2-0.2,0.3-0.3
+                 C7.8,3.7,7.9,3.6,8,3.6c0.1,0,0.3,0,0.4,0.1C8.5,3.8,8.6,3.9,8.7,4l1.7,3.2l0.8-1.1C11.2,6,11.3,6,11.5,5.9c0.1-0.1,0.2-0.1,0.4-0.1
+                 h2.7c0.2,0,0.4,0.1,0.5,0.2C15.2,6.2,15.2,6.4,15.2,6.5z"
+                    />
+                  </svg>
+                </i>
+                <div data-i18n="Sessions">Sessions</div>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="favoris.html" class="menu-link">
+                <i class="menu-icon"
+                  ><svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    viewBox="0 0 18 16"
+                    style="enable-background: new 0 0 18 16"
+                    xml:space="preserve"
+                  >
+                    <path
+                      class="st0"
+                      d="M12.7,0c-0.8,0-1.6,0.3-2.3,0.7C9.7,1.1,9.1,1.8,8.7,2.5c-0.4-0.7-1-1.4-1.7-1.8C6.3,0.3,5.5,0,4.7,0
+                 C3.4,0.1,2.2,0.7,1.3,1.7C0.4,2.7,0,4,0,5.3c0,3.4,3.5,7.2,6.4,9.8C7.1,15.7,7.9,16,8.7,16c0.9,0,1.7-0.3,2.3-0.9
+                 c2.9-2.6,6.4-6.3,6.4-9.8c0-1.4-0.4-2.7-1.3-3.7C15.3,0.7,14,0.1,12.7,0z M10.1,14c-0.4,0.3-0.9,0.5-1.4,0.5c-0.5,0-1-0.2-1.4-0.5
+                 c-3.7-3.3-5.9-6.4-5.9-8.6c0-1,0.3-1.9,0.9-2.6C2.9,2,3.8,1.6,4.7,1.5C5.6,1.6,6.5,2,7.1,2.7C7.7,3.4,8,4.4,8,5.3
+                 c0,0.2,0.1,0.4,0.2,0.5C8.3,6,8.5,6.1,8.7,6.1c0.2,0,0.4-0.1,0.5-0.2c0.1-0.1,0.2-0.3,0.2-0.5c0-1,0.3-1.9,0.9-2.6
+                 c0.6-0.7,1.5-1.2,2.4-1.2c0.9,0.1,1.8,0.5,2.4,1.2C15.7,3.4,16,4.4,16,5.3C16,7.5,13.9,10.7,10.1,14L10.1,14z"
+                    />
+                  </svg>
+                </i>
+                <div data-i18n="Favoris">Favoris</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar"
+          >
+            <div
+              class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+            >
+              <a
+                class="nav-item nav-link px-0 me-xl-4"
+                href="javascript:void(0)"
+              >
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div
+              class="navbar-nav-right d-flex align-items-center"
+              id="navbar-collapse"
+            >
+              <!-- Greeting -->
+              <div class="navbar-nav align-items-center">
+                <h4><b>Ophtalmologie</b></h4>
+              </div>
+              <!-- /Greeting -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <!-- Notification -->
+                <li
+                  class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1"
+                >
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false"
+                  >
+                    <i class="ti ti-bell ti-md"></i>
+                    <span
+                      class="badge bg-primary rounded-pill badge-notifications"
+                      >3</span
+                    >
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div
+                        class="dropdown-header d-flex align-items-center py-3"
+                      >
+                        <h5 class="text-body mb-0 me-auto">Notification</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li
+                      class="dropdown-notifications-list scrollable-container"
+                    >
+                      <ul class="list-group list-group-flush">
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Lorem, ipsum dolor.</h6>
+                              <p class="mb-0">Lorem ipsum dolor sit.</p>
+                              <small class="text-muted">Il y a 4 jours</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Lorem, ipsum dolor.</h6>
+                              <p class="mb-0">Lorem ipsum dolor sit.</p>
+                              <small class="text-muted">Il y a 4 jours</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                        <li
+                          class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read"
+                        >
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img
+                                  src="assets/img/avatars/1.png"
+                                  alt
+                                  class="h-auto rounded-circle"
+                                />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Lorem, ipsum dolor.</h6>
+                              <p class="mb-0">Lorem ipsum dolor sit.</p>
+                              <small class="text-muted">Il y a 4 jours</small>
+                            </div>
+                            <div
+                              class="flex-shrink-0 dropdown-notifications-actions"
+                            >
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a
+                                href="javascript:void(0)"
+                                class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center"
+                      >
+                        View all notifications
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link" href="profile.html">
+                    <div class="avatar avatar-online">
+                      <div
+                        class="avatar avatar-md d-block flex-shrink-0 me-sm-3 me-2"
+                      >
+                        <span
+                          class="avatar-initial rounded-circle bg-label-primary"
+                          >LI</span
+                        >
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+          </nav>
+
+          <!-- / Navbar -->
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="col-xl-12 col-md-12 col-12">
+                <a href="form.html">
+                  <div
+                    class="col-xl-3 certif btn-label-primary waves-effect p-3 mb-4 mr-3"
+                  >
+                    <div class="row gap-4 gap-sm-0">
+                      <div>
+                        <div class="d-flex gap-2 align-items-center mb-3">
+                          <div>
+                            <i class="mr-2"
+                              ><svg
+                                width="42"
+                                height="42"
+                                viewBox="0 0 42 42"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <circle
+                                  cx="21"
+                                  cy="21"
+                                  r="20.5"
+                                  fill="#EEF3FA"
+                                  stroke="#C2D3EC"
+                                />
+                                <g clip-path="url(#clip0_241_12974)">
+                                  <path
+                                    d="M27.5649 10.4492H12.2571L12.0156 32.5176L28.2893 32.2762V29.5876L27.9764 26.7827L28.2893 24.723V11.1736C28.2893 10.7735 27.965 10.4492 27.5649 10.4492Z"
+                                    fill="#CDE2FF"
+                                  />
+                                  <path
+                                    d="M26.8506 31.5518L26.843 30.8275L12.2595 10.4492C11.8595 10.4492 11.5352 10.7735 11.5352 11.1736V32.2762C11.5352 32.6762 11.8595 33.0005 12.2595 33.0005H27.5674C27.9674 33.0005 28.2917 32.6762 28.2917 32.2762H26.1262C26.5263 32.2762 26.8506 31.9519 26.8506 31.5518Z"
+                                    fill="#9EC8FC"
+                                  />
+                                  <path
+                                    d="M28.2905 24.7222L26.8418 20.5581L24.8516 19.709L28.2905 29.5867V24.7222Z"
+                                    fill="#9EC8FC"
+                                  />
+                                  <path
+                                    d="M26.1196 9H10.8118L10.5703 31.0684L26.844 30.827V25.4259L26.2256 20.2757L26.844 18.3079V9.72435C26.844 9.32431 26.5196 9 26.1196 9Z"
+                                    fill="#EDF6FF"
+                                  />
+                                  <path
+                                    d="M26.8422 18.3081L25.3595 16.455C25.1726 16.2191 24.793 16.3512 24.793 16.6522V19.3604C24.793 19.4792 24.8129 19.5972 24.852 19.7094L26.8422 25.4261V18.3081Z"
+                                    fill="#CDE2FF"
+                                  />
+                                  <path
+                                    d="M23.945 29.0154H12.9833C12.7833 29.0154 12.6211 28.8532 12.6211 28.6532C12.6211 28.4532 12.7833 28.291 12.9833 28.291H23.945C24.145 28.291 24.3072 28.4532 24.3072 28.6532C24.3072 28.8532 24.145 29.0154 23.945 29.0154Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M23.945 26.8415H12.9833C12.7833 26.8415 12.6211 26.6794 12.6211 26.4794C12.6211 26.2793 12.7833 26.1172 12.9833 26.1172H23.945C24.145 26.1172 24.3072 26.2793 24.3072 26.4794C24.3072 26.6794 24.145 26.8415 23.945 26.8415Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M23.945 24.6696H12.9833C12.7833 24.6696 12.6211 24.5075 12.6211 24.3075C12.6211 24.1075 12.7833 23.9453 12.9833 23.9453H23.945C24.145 23.9453 24.3072 24.1075 24.3072 24.3075C24.3072 24.5075 24.145 24.6696 23.945 24.6696Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M22.9792 22.4958H12.9833C12.7833 22.4958 12.6211 22.3337 12.6211 22.1337C12.6211 21.9336 12.7833 21.7715 12.9833 21.7715H22.9792C23.1793 21.7715 23.3414 21.9336 23.3414 22.1337C23.3414 22.3337 23.1793 22.4958 22.9792 22.4958Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M23.945 20.324H12.9833C12.7833 20.324 12.6211 20.1618 12.6211 19.9618C12.6211 19.7618 12.7833 19.5996 12.9833 19.5996H23.945C24.145 19.5996 24.3072 19.7618 24.3072 19.9618C24.3072 20.1618 24.145 20.324 23.945 20.324Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M23.945 18.1501H12.9833C12.7833 18.1501 12.6211 17.988 12.6211 17.788C12.6211 17.5879 12.7833 17.4258 12.9833 17.4258H23.945C24.145 17.4258 24.3072 17.5879 24.3072 17.788C24.3072 17.988 24.145 18.1501 23.945 18.1501Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M12.9833 15.977C12.7838 15.977 12.6218 15.8157 12.6211 15.616C12.6204 15.416 12.782 15.2533 12.9821 15.2527L20.1772 15.2285C20.3787 15.2276 20.5399 15.3895 20.5406 15.5895C20.5413 15.7895 20.3797 15.9522 20.1797 15.9529L12.9845 15.977C12.9841 15.977 12.9837 15.977 12.9833 15.977Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M22.0379 12.3552H14.8934C14.6934 12.3552 14.5312 12.193 14.5312 11.993C14.5312 11.793 14.6934 11.6309 14.8934 11.6309H22.0379C22.2379 11.6309 22.4001 11.793 22.4001 11.993C22.4001 12.193 22.2379 12.3552 22.0379 12.3552Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M10.8103 30.1026V9C10.4103 9 10.0859 9.32431 10.0859 9.72435V30.827C10.0859 31.227 10.4103 31.5513 10.8103 31.5513H26.1181C26.5182 31.5513 26.8425 31.227 26.8425 30.827H11.5346C11.1346 30.827 10.8103 30.5027 10.8103 30.1026Z"
+                                    fill="#CDE2FF"
+                                  />
+                                  <path
+                                    d="M26.0852 15.7305L25.8438 16.6303L26.0852 17.681L27.0827 16.9894L26.0852 15.7305Z"
+                                    fill="#7E8B96"
+                                  />
+                                  <path
+                                    d="M25.5195 15.9276V17.5337L26.086 17.6809V15.7303C25.8991 15.4945 25.5195 15.6266 25.5195 15.9276Z"
+                                    fill="#5F6C75"
+                                  />
+                                  <path
+                                    d="M27.083 16.9902L26.0856 17.3342L25.6836 18.4967C25.6872 18.68 26.3258 19.0859 26.3258 19.0859L27.938 18.1643C27.8989 18.052 27.8412 17.9472 27.7674 17.854L27.083 16.9902Z"
+                                    fill="#E0BBA4"
+                                  />
+                                  <path
+                                    d="M26.2105 18.7643C26.1616 18.6241 26.0857 18.4277 26.0821 18.2444V17.334L25.5156 17.5345V18.6366C25.5156 18.7554 25.5356 18.8734 25.5746 18.9856L26.3223 19.0857L26.2105 18.7643Z"
+                                    fill="#D8AB8C"
+                                  />
+                                  <path
+                                    d="M26.2109 18.7643L29.8605 30.2243C29.9404 30.4538 30.3102 30.4535 30.836 30.2704C31.6156 29.999 31.8879 29.5184 31.8879 29.5184L27.9349 18.1641L26.2109 18.7643Z"
+                                    fill="#FFD064"
+                                  />
+                                  <path
+                                    d="M30.1122 29.9386L26.2139 18.7637L25.5781 18.985L29.5311 30.3394C29.6612 30.713 30.2949 30.832 30.9465 30.6051C31.5982 30.3782 32.021 29.8915 31.8909 29.5179C31.8909 29.5179 31.6663 29.7179 31.1405 29.9009C30.6146 30.084 30.1921 30.168 30.1122 29.9386Z"
+                                    fill="#EBB044"
+                                  />
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_241_12974">
+                                    <rect
+                                      width="24"
+                                      height="24"
+                                      fill="white"
+                                      transform="translate(9 9)"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </i>
+                          </div>
+                          <h6 class="mb-0">Oeil rouge</h6>
+                        </div>
+                        <div class="progress w-100" style="height: 4px">
+                          <div
+                            class="progress-bar bg-danger"
+                            role="progressbar"
+                            style="width: 65%"
+                            aria-valuenow="65"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                <div
+                  class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column"
+                >
+                  <div>
+                    ©
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    2023 , made with ❤️ by
+                    <a
+                      href="https://medset.com"
+                      target="_blank"
+                      class="fw-semibold"
+                      >Medset</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+
+    <script src="assets/vendor/js/menu.js"></script>
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/dashboards-analytics.js"></script>
+  </body>
+</html>
